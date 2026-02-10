@@ -17,8 +17,9 @@ export function TodoForm({ onAdd }: TodoFormProps) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex w-full gap-2 mb-6 max-[450px]:items-center max-[450px]:flex-col max-[450px]:mb-0">
+        <form onSubmit={handleSubmit} id="todo-form" className="flex w-full gap-2 mb-6 max-[450px]:items-center max-[450px]:flex-col max-[450px]:mb-0">
             <input
+                id="todo-input"
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}

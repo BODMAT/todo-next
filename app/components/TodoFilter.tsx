@@ -28,6 +28,7 @@ export function TodoFilter({ currentFilter, onFilterChange }: TodoFilterProps) {
                     width={24}
                     height={24}
                     className="w-6 h-6"
+                    style={{ height: 'auto' }}
                 />
             </button>
 
